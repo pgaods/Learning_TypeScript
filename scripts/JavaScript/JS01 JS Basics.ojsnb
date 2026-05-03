@@ -1,0 +1,55 @@
+{
+    "id": "60d87423-1816-4496-be96-d4d9fb689b39",
+    "files": [],
+    "nodes": [
+        {
+            "id": "tmp-0",
+            "name": "",
+            "value": "The .ojsnb is the extension for the Jupyter notebook for JavaScript.",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "tmp-1",
+            "name": "",
+            "value": "### I. Installation & Setup\r\n\r\nFirst, check if Node.js is installed with version. If not, go to the original Node.js page to download it:\r\n\r\n```bash\r\nnode --version && npm --version\r\n```\r\n\r\nNext, in Vscode extensions, search for 'Code Runner' (author: Jun Han) and install it. \r\n\r\nFor running JavaScript:\r\n- Use the Code Runner extension in Vscode (right-click → Run Code)\r\n- Or run JavaScript files directly in the terminal (bash): `node ./tests/exploratory_tests/helloworld.js`\r\n- For Jupyter notebooks: you can use JavaScript directly in code cells and execute with Node.js if you have the right kernel. This is the most complicated path. \r\n\r\nTo make ijavascript work in Jupyter notebooks, you'd need to:\r\n\r\n- download Visual Studio Community (free) from https://visualstudio.microsoft.com/;\r\n- during installation, select \"Desktop development with C++\";\r\n- restart and retry the bash command `npm install -g ijavascript`",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "tmp-2",
+            "name": "",
+            "value": "// Test JavaScript - try running this with right-click → Run Code\r\nconsole.log(\"Hello from JavaScript!\");\r\nconsole.log(\"Node.js is working!\");\r\n\r\n// Basic example\r\nconst msg = \"Welcome to JavaScript\";\r\n// return messages;\r\nconsole.log(msg);",
+            "mode": "javascript",
+            "outputs": []
+        },
+        {
+            "id": "tmp-3",
+            "name": "",
+            "value": "In a notebook environment (like Observable/ojsnb), the cell displays the final result of the code. Since your last line is a console.log statement, and that statement always results in undefined after it finishes printing, the notebook reports undefined as the cell's output.\r\n\r\nIf you want the notebook to display the string \"Welcome to JavaScript\" as the result of the cell, simply put the variable name at the very end without console.log():",
+            "mode": "md",
+            "outputs": []
+        },
+        {
+            "id": "tmp-4",
+            "name": "",
+            "value": "{\r\n  console.log(\"Hello from JavaScript!\");\r\n  console.log(\"Node.js is working!\");\r\n  const msg2 = \"Welcome to JavaScript\";\r\n  return msg2; // This tells ojsnb what to display\r\n}",
+            "mode": "javascript",
+            "outputs": []
+        },
+        {
+            "id": "tmp-5",
+            "name": "",
+            "value": "// Test JavaScript - try running this with right-click → Run Code\r\nconsole.log(\"Hello from JavaScript!\");\r\nconsole.log(\"Node.js is working!\");\r\n\r\n// Basic example\r\nconst msg = \"Welcome to JavaScript\";\r\nreturn msg;\r\n\r\nconsole.log(msg);",
+            "mode": "javascript",
+            "outputs": []
+        },
+        {
+            "id": "tmp-6",
+            "name": "",
+            "value": "Note that Vscode is a very different product compared to Visual Studio (what npm needs). Visual Studio is:\r\n\r\n- full IDE (Integrated Development Environment)\r\n- heavy and feature-rich\r\n- includes C++ compiler and build tools\r\n- designed for professional C++/.NET development\r\n- much larger download (~5-10GB)\r\n\r\nVscode in contrast is:\r\n\r\n- lightweight code editor, and free\r\n- fast and minimal and needs extensions for extra features\r\n- great for scripting, web development, etc.",
+            "mode": "md",
+            "outputs": []
+        }
+    ]
+}
