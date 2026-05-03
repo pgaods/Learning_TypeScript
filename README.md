@@ -31,6 +31,34 @@ Errata for the book can be found here:
 
 - <https://www.oreilly.com/catalog/errata.csp?isbn=0636920578000>
 
+## Installation
+
+### Prerequisites
+
+To run JavaScript code, we need to install Node.js first.
+
+1. Install Node.js
+   - Download from [nodejs.org](https://nodejs.org)
+   - This includes both `node` and `npm`
+   - Verify installation:
+
+     ```bash
+     node --version
+     npm --version
+     ```
+
+2. Install TypeScript support (for .jsnb notebooks)
+
+   ```bash
+   npm install -g ts-node
+   ```
+
+3. Install VS Code extensions (Optional)
+   - **JS/TS Notebook Extension** (by Ajay Mall) for `.jsnb` notebooks, or
+   - **JavaScript Notebook Extension Pack** (by Gordon Smith) for `.ojsnb` notebooks
+
+Once Node.js is installed and the extensions are in place, you can start using the notebooks.
+
 ## Running TypeScript in Notebooks
 
 There are two useful vscode extensions in the market place to run JavaScript and TypeScript files.
@@ -42,3 +70,19 @@ The JS/TS Notebook extension designed by Ajay Mall is a good start. Jupyter note
 ### The JavaScript Notebook Extension Pack
 
 The JavaScript Notebook extension pack designed by Gordon Smith is another option. The Jupyter notebooks will have the file extension `.ojsnb`.
+
+### Conventions
+
+We will be using `jsnb` for TypeScript and `.ojsnb` for JavaScript. The most standard way to execute a JavaScript or TypeScript script like how Python executes a `main.py` file is using bash.
+
+To run Javascript code:
+
+```bash
+node script.js          # JavaScript
+```
+
+To run TypeScript code:
+
+```bash
+npx ts-node script.ts   # TypeScript
+```
