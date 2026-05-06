@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "cells": [
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "This notebook is a quickstart tutorial for TypeScript using `.jsnb` notebook developed in JS/TS Notebook Extension in vscode. \r\n\r\nTo execute the code, use the JS/TS Kernel in vscode. ",
+      "outputs": [],
+      "metadata": {}
+    },
+    {
+      "kind": "code",
+      "language": "typescript",
+      "source": "// Basic TypeScript example: Variables and types\r\nlet message: string = \"Hello, TypeScript!\";\r\nlet count: number = 42;\r\nlet isActive: boolean = true;\r\n\r\nconsole.log(message, count, isActive);",
+      "outputs": [
+        {
+          "mime": "application/vnd.code.notebook.stdout",
+          "data": "Hello, TypeScript! 42 true"
+        },
+        {
+          "mime": "application/vnd.jsnb.timing+json",
+          "data": "{\n\t\"elapsedMs\": 11\n}"
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "## What is TypeScript?\n\nTypeScript is a superset of JavaScript that adds static typing. It helps catch errors early and improves code maintainability. TypeScript code compiles to plain JavaScript that runs in any browser or Node.js environment.",
+      "outputs": [],
+      "metadata": {}
+    },
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "## Functions in TypeScript\n\nFunctions can have typed parameters and return types. This helps prevent bugs.",
+      "outputs": [],
+      "metadata": {}
+    },
+    {
+      "kind": "code",
+      "language": "typescript",
+      "source": "// Function example with types\nfunction greet(name: string): string {\n    return `Hello, ${name}!`;\n}\n\nfunction add(a: number, b: number): number {\n    return a + b;\n}\n\nconsole.log(greet(\"World\"));\nconsole.log(add(5, 3));",
+      "outputs": [
+        {
+          "mime": "application/vnd.code.notebook.stdout",
+          "data": "Hello, World!"
+        },
+        {
+          "mime": "application/vnd.code.notebook.stdout",
+          "data": "8"
+        },
+        {
+          "mime": "application/vnd.jsnb.timing+json",
+          "data": "{\n\t\"elapsedMs\": 17\n}"
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "## Interfaces and Objects\n\nTypeScript allows defining interfaces to describe object shapes.",
+      "outputs": [],
+      "metadata": {}
+    },
+    {
+      "kind": "code",
+      "language": "typescript",
+      "source": "// Interface example\ninterface Person {\n    name: string;\n    age: number;\n}\n\nfunction introduce(person: Person): string {\n    return `Hi, I'm ${person.name} and I'm ${person.age} years old.`;\n}\n\nconst john: Person = { name: \"John\", age: 30 };\nconsole.log(introduce(john));",
+      "outputs": [
+        {
+          "mime": "application/vnd.code.notebook.stdout",
+          "data": "Hi, I'm John and I'm 30 years old."
+        },
+        {
+          "mime": "application/vnd.jsnb.timing+json",
+          "data": "{\n\t\"elapsedMs\": 10\n}"
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "## Running TypeScript\n\nIn this .jsnb notebook, you can execute TypeScript cells directly. For standalone projects, install TypeScript globally with `npm install -g typescript` and compile with `tsc filename.ts`.\n\nTo run the cells above, click the play button next to each code cell. The output will appear below.",
+      "outputs": [],
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

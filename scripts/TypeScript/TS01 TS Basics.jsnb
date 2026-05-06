@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "cells": [
+    {
+      "kind": "markdown",
+      "language": "markdown",
+      "source": "We will start using the `.jsnb` extension to run TypeScript code.",
+      "outputs": [],
+      "metadata": {}
+    },
+    {
+      "kind": "code",
+      "language": "typescript",
+      "source": "const str = \"abc\";\r\nconst length = str.length;  // This will be 3\r\nconsole.log(length);  // Output: 3",
+      "outputs": [
+        {
+          "mime": "application/vnd.code.notebook.stdout",
+          "data": "3"
+        },
+        {
+          "mime": "application/vnd.jsnb.timing+json",
+          "data": "{\n\t\"elapsedMs\": 4\n}"
+        }
+      ],
+      "metadata": {}
+    }
+  ],
+  "metadata": {}
+}

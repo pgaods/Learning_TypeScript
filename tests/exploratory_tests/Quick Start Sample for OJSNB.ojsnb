@@ -5,7 +5,7 @@
         {
             "id": 0,
             "name": "",
-            "value": "# Quick Start\r\n\r\nThis notebook is a quick introduction to JavaScript (ObservableHQ flavour) notebooks.  To get the full experience it is strongly recommended that you install the [JavsaScript Notebook Extension Pack](https://marketplace.visualstudio.com/items?itemName=GordonSmith.js-notebook-extension-pack) as it includes additional support for some of the more esoteric cell types.\r\n\r\n## Cell Types\r\n\r\n### Markdown",
+            "value": "# Quick Start\r\n\r\nThis notebook is a quick introduction to JavaScript (ObservableHQ flavour) notebooks.  To get the full experience it is strongly recommended that you install the [JavaScript Notebook Extension Pack](https://marketplace.visualstudio.com/items?itemName=GordonSmith.js-notebook-extension-pack) as it includes additional support for some of the more esoteric cell types.\r\n\r\nTo run the code, use the OJS Notebook Kernel. ",
             "mode": "md",
             "outputs": []
         },
@@ -131,8 +131,15 @@
         {
             "id": 17,
             "name": "",
-            "value": "f(x) = \\int_{-\\infty}^\\infty\r\n    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\r\n    \\,d\\xi",
+            "value": "tex`f(x) = \\int_{-\\infty}^\\infty\r\n    \\hat f(\\xi)\\,e^{2 \\pi i \\xi x}\r\n    \\,d\\xi`",
             "mode": "tex",
+            "outputs": []
+        },
+        {
+            "id": "tmp-0",
+            "name": "",
+            "value": "## Conclusion\n\nThis quick start has demonstrated the various cell types supported in ObservableHQ JavaScript notebooks (.ojsnb). You can mix Markdown, Observable JavaScript, HTML, SVG, GraphViz, Mermaid, and LaTeX in a single notebook for rich, interactive documents.\n\nFor more advanced features, explore the [ObservableHQ documentation](https://observablehq.com/documentation) and experiment with reactive programming in OJS cells.",
+            "mode": "md",
             "outputs": []
         }
     ]
